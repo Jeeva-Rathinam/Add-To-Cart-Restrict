@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Brst_Test>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Brst_Test>
+	</modules>
+</config>

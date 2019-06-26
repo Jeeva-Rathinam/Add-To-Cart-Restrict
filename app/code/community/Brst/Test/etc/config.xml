@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Brst_Test>
+            <version>0.1.0</version>
+        </Brst_Test>
+    </modules>
+    <global>
+        <models>
+            <Brst_Test>
+                <class>Brst_Test_Model</class>
+            </Brst_Test>
+        </models>
+    </global>
+
+    <frontend>
+        <events>
+            <controller_action_predispatch_checkout_cart_add>
+                <observers>
+                    <brst_test_log_cart_add>
+                        <class>Brst_Test_Model_Observer</class>
+                        <method>logCartAdd</method>
+                    </brst_test_log_cart_add>
+                </observers>
+            </controller_action_predispatch_checkout_cart_add>
+        </events>
+    </frontend>
+</config>
